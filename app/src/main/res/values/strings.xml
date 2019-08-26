@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">OpenWeather Demo</string>
+    <string name="search_key">City</string>
+    <string name="row_title">%.2f\u00B0   %s</string>
+    <string name="min_temp">Min Temp: %.2f\u00B0</string>
+    <string name="max_temp">Max Temp: %.2f\u00B0</string>
+    <string name="current_location">Current Location</string>
+    <string name="error">Error</string>
+    <string name="ok">Ok</string>
+</resources>

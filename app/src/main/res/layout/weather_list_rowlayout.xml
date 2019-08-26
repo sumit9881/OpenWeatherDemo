@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_detail"
+            android:orientation="horizontal"
+            android:paddingBottom="2dp"
+            android:weightSum="1">
+
+
+            <TextView
+                android:id="@+id/textView_min_temp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="start"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/row_desc_text_height"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView_max_temp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="end"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/row_desc_text_height"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textview_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="end"
+            android:paddingTop="3dp"
+            android:paddingEnd="4dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/row_small_text_size" />
+
+        <TextView
+            android:id="@+id/textview_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_temp_and_main"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/row_desc_text_height" />
+
+        <TextView
+            android:id="@+id/textview_temp_and_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="2dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/row_title_text_height"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+

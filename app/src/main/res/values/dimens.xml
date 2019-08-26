@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="view_margin">8dp</dimen>
+    <dimen name="search_view_padding">8dp</dimen>
+
+    <dimen name="current_location_text_padding">15dp</dimen>
+
+    <dimen name="row_title_text_height">18sp</dimen>
+    <dimen name="row_desc_text_height">14sp</dimen>
+    <dimen name="row_small_text_size">12sp</dimen>
+    <dimen name="listview_row_height">210dp</dimen>
+    <dimen name="row_imageview_height">60dp</dimen>
+    <dimen name="row_text_margin_start">5dp</dimen>
+    <dimen name="row_text_margin_top">10dp</dimen>
+    <dimen name="row_text_margin_bottom">10dp</dimen>
+    <dimen name="row_padding">18dp</dimen>
+</resources>

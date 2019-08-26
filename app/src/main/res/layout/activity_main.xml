@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/view_margin"
+    android:layout_marginEnd="@dimen/view_margin"
+    android:layout_marginTop="@dimen/view_margin"
+    android:orientation="horizontal"
+    tools:context=".ui.MainActivity"
+    android:focusableInTouchMode="true">
+
+    <EditText
+        android:id="@+id/edit_text_search_string"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rounded_corner"
+        android:inputType="text|textNoSuggestions"
+        android:layout_marginTop="5dp"
+        android:padding="@dimen/search_view_padding"
+        android:hint="@string/search_key"
+        android:maxLines="1"
+        android:imeOptions="actionSearch" />
+
+    <TextView
+        android:id="@+id/text_view_current_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text_search_string"
+        android:drawableLeft="@drawable/ic_near_me_black_20dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/current_location"
+        android:textSize="18sp"
+        android:background="@drawable/button_background"
+        android:layout_marginStart="@dimen/current_location_text_padding"
+        android:layout_marginEnd="@dimen/current_location_text_padding"
+        android:padding="10dp"
+        android:visibility="gone"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyvlerview_serach_result"
+        android:layout_below="@id/edit_text_search_string"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.ProgressBar.Large"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>
